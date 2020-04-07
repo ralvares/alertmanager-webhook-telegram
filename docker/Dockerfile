@@ -15,6 +15,6 @@ COPY run.sh /alertmanager-webhook-telegram
 
 RUN chmod +x /alertmanager-webhook-telegram/run.sh
 
-EXPOSE 9119
+EXPOSE 8080
 
 ENTRYPOINT ["./run.sh"]
