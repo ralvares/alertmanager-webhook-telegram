@@ -13,9 +13,6 @@ Another way to get the chat ID
 3) At the url, you can get the chat ID
 
 
-> make sure set proper username and password when you exposing your app on internet
-
-
 Setup Telegram receiver 
 ========================
 
@@ -31,7 +28,8 @@ oc new-app --name=telegram \
     -e BASIC_AUTH_USERNAME="xxxxxxxx" \
     -e BASIC_AUTH_PASSWORD="YYYYYYYY"
 ```
-    
+> make sure set proper username and password when you exposing your app on internet  
+ 
 Adjust alertmanager.yaml, example:
 ```
 "global":
