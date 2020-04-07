@@ -58,22 +58,24 @@ Example to test
 Setup Telegram receiver
 ========================
 
+```
 oc new-project telegram
 # Build and deploy
 oc new-app --name=telegram \
     https://github.com/ralvares/alertmanager-webhook-telegram.git
+```
     
 Add enviorment variables to deploymentconfig telegram
-
+```
 FLASK_ENV=development # If you like debug output ;-)
 APP_FILE=flaskAlert.py
 TELEGRAM_BOTTOKEN="9999999999:AAAAAA-AAAAAA-AAAAA...."
 TELEGRAM_CHATID="999999999"
 BASIC_AUTH_USERNAME="aiPh1eHu"
 BASIC_AUTH_PASSWORD="eoPhait8"
-
+```
 Adjust alertmanager.yaml, example:
-
+```
 "global":
   "resolve_timeout": "5m"
 "receivers":
@@ -97,3 +99,4 @@ Adjust alertmanager.yaml, example:
       match:
         alertname: Watchdog
     
+```
