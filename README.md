@@ -1,4 +1,4 @@
-# Alertmanager webhook for Telegram on Openshift
+# Telegram webhook for alertmanager Openshift
 
 One way to get the chat ID
 ==========================
