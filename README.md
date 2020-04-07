@@ -56,3 +56,7 @@ Adjust alertmanager.yaml, example:
         alertname: Watchdog
     
 ```
+
+```
+oc -n openshift-monitoring create secret generic alertmanager-main --from-file=alertmanager.yaml --dry-run -o=yaml | oc -n openshift-monitoring replace secret --filename=-
+```
