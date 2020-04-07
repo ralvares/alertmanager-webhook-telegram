@@ -28,7 +28,7 @@ oc new-app --name=telegram \
     -e APP_FILE=flaskAlert.py \
     -e TELEGRAM_BOTTOKEN="9999999999:AAAAAA-AAAAAA-AAAAA...." \
     -e BASIC_AUTH_USERNAME="xxxxxxxx" \
-    -e BASIC_AUTH_PASSWORD="YYYYYYYY" \
+    -e BASIC_AUTH_PASSWORD="YYYYYYYY"
 ```
     
 Adjust alertmanager.yaml, example:
