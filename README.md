@@ -24,7 +24,7 @@ oc new-app --name=telegram \
     -e FLASK_ENV=development \
     -e APP_FILE=flaskAlert.py \
     -e TELEGRAM_BOTTOKEN="9999999999:AAAAAA-AAAAAA-AAAAA...." \
-    -e TELEGRAM_CHATID="-1001261302111"
+    -e TELEGRAM_CHATID="-1001261302111" \
     -e BASIC_AUTH_USERNAME="xxxxxxxx" \
     -e BASIC_AUTH_PASSWORD="YYYYYYYY"
 ```
